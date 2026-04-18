@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="36" fill="#081321"/>
+  <circle cx="930" cy="180" r="150" fill="#E6A758" fill-opacity="0.2"/>
+  <circle cx="250" cy="220" r="210" fill="#57C4FF" fill-opacity="0.18"/>
+  <path d="M128 620C238 492 311 443 388 443C475 443 531 522 628 522C744 522 788 334 910 334C993 334 1045 403 1081 458" stroke="#6ED2FF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M118 694C233 566 323 534 414 534C529 534 581 641 686 641C811 641 849 467 980 467C1034 467 1075 484 1126 543" stroke="#F0C27A" stroke-width="8" stroke-linecap="round"/>
+  <rect x="116" y="120" width="288" height="200" rx="24" fill="#0E223A" stroke="#294C73"/>
+  <rect x="156" y="164" width="208" height="20" rx="10" fill="#5BC2F8" fill-opacity="0.85"/>
+  <rect x="156" y="204" width="148" height="20" rx="10" fill="#ABCFE6" fill-opacity="0.65"/>
+  <rect x="156" y="244" width="178" height="20" rx="10" fill="#ABCFE6" fill-opacity="0.45"/>
+  <rect x="766" y="556" width="256" height="178" rx="24" fill="#10223A" stroke="#35567C"/>
+  <path d="M820 648C844 582 876 548 918 548C964 548 1004 590 1018 658" stroke="#F0C27A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M842 668H994" stroke="#F5F7FA" stroke-opacity="0.8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M876 628V708" stroke="#F5F7FA" stroke-opacity="0.8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M962 628V708" stroke="#F5F7FA" stroke-opacity="0.8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M564 124V756" stroke="#24415F" stroke-width="2" stroke-dasharray="8 10"/>
+  <text x="154" y="312" fill="#EAF3FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Mainframe ↔ AI</text>
+  <text x="770" y="774" fill="#EAF3FF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">Jazz / timing / systems</text>
+</svg>
