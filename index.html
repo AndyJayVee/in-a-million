@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="noise"></div>
   <div class="bg-orb orb-1"></div>
   <div class="bg-orb orb-2"></div>
+
   <header class="site-header">
     <a class="brand" href="#top">in-a-million</a>
     <nav>
@@ -20,81 +22,98 @@
       <a href="#engineering">Engineering</a>
       <a href="#music">Jazz</a>
       <a href="#timeline">Timeline</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section">
-      <div class="hero-copy">
+      <div class="hero-copy reveal">
         <p class="eyebrow">Andy Valkenburg</p>
         <h1>Understanding systems, <span>from Mainframe to AI.</span></h1>
         <p class="lead">
           Software engineer, jazz musician, and long-time experimenter with technology —
           from COBOL on large-scale mainframe systems to automation, AI workflows, and startup building.
         </p>
+        <div class="hero-meta">
+          <span>COBOL · z/OS · Zowe · Robot Framework</span>
+          <span>Jazz bass · systems thinking · Recrugent</span>
+        </div>
         <div class="cta-row">
-          <a class="btn primary" href="#about">Read more</a>
-          <a class="btn secondary" href="#contact">Get in touch</a>
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn secondary" href="#about">Read more</a>
         </div>
       </div>
-      <div class="hero-art card glass">
-        <img src="assets/hero-abstract.svg" alt="Abstract artwork combining engineering and jazz themes" />
+      <div class="hero-visual reveal delay-1">
+        <div class="hero-photo card glass">
+          <img src="assets/dev-room.png" alt="Developer workspace with three screens" />
+        </div>
+        <div class="floating-note card panel">
+          <p class="note-label">Current mode</p>
+          <strong>Complex systems, real constraints, practical experimentation.</strong>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section grid-2">
+    <section id="about" class="section split-intro reveal">
       <div>
         <p class="section-label">About</p>
-        <h2>Curiosity first.</h2>
+        <h2>Curiosity first. Trend second.</h2>
         <p>
           I’m a software engineer with one foot in modern stacks and one in long-lived critical systems.
-          By day I work as a COBOL developer at the Dutch Tax Authority, building and maintaining
+          By day I work as a COBOL developer at the Belastingdienst, building and maintaining
           large-scale mainframe systems with z/OS, ISPF, IDz, Zowe and Robot Framework.
         </p>
         <p>
-          I’m developing as a technical depth engineer: someone who likes getting below the surface,
+          In that environment, I’m developing as a technical depth engineer: someone who likes getting below the surface,
           understanding how things really work, and improving them from that reality rather than from fashion.
         </p>
         <p>
-          Alongside that, I’m building <strong>Recrugent.com</strong> as a startup — a product-led approach to recruitment
-          built around how teams actually work, not just how CVs are filtered.
+          Alongside that, I build products and experiments around ideas that keep pulling my attention — recruitment,
+          AI workflows, automation and the space where technical systems start behaving like organizations.
         </p>
       </div>
-      <aside class="card panel photo-slot">
-        <div class="slot-top">
-          <span class="slot-badge">Photo placeholder</span>
-          <h3>Your portrait or workspace shot</h3>
+      <aside class="identity-stack">
+        <div class="card panel stat-card">
+          <span class="stat-kicker">Work</span>
+          <h3>Mainframe engineering</h3>
+          <p>Learning depth through systems that have to keep working.</p>
         </div>
-        <p>
-          This slot is ready for a personal photo. For now, the site keeps it clean and lightweight.
-        </p>
+        <div class="card panel stat-card accent">
+          <span class="stat-kicker">Music</span>
+          <h3>Jazz bassist</h3>
+          <p>Listening, timing and serving the whole without losing your own voice.</p>
+        </div>
       </aside>
     </section>
 
-    <section id="engineering" class="section">
+    <section id="engineering" class="section reveal">
       <div class="section-head">
         <div>
           <p class="section-label">Software engineering</p>
           <h2>Legacy and modern, both taken seriously.</h2>
         </div>
+        <p class="section-side">
+          My technical path combines Java, PHP, Symfony, Laravel, Docker and agile workflows with the realities of enterprise mainframe development.
+        </p>
       </div>
       <div class="card-grid three">
-        <article class="card panel">
+        <article class="card panel soft-hover">
           <h3>Current focus</h3>
           <p>
             COBOL development on enterprise-scale mainframe systems, with attention to structure,
             reliability, maintainability and the realities of long software lifecycles.
           </p>
         </article>
-        <article class="card panel">
+        <article class="card panel soft-hover">
           <h3>Broader stack</h3>
           <p>
             Experience with Java, PHP, Symfony, Laravel, Docker and agile workflows.
             Comfortable moving between older and newer environments.
           </p>
         </article>
-        <article class="card panel">
+        <article class="card panel soft-hover">
           <h3>Engineering lens</h3>
           <p>
             Influenced by practical software engineering ideas from <em>Clean Code</em>,
@@ -104,31 +123,25 @@
       </div>
     </section>
 
-    <section id="music" class="section grid-2 reverse">
-      <div class="card glass artwork-panel">
+    <section id="music" class="section grid-2 reverse reveal">
+      <div class="card glass artwork-panel jazz-panel">
         <img src="assets/jazz-lines.svg" alt="Abstract jazz-inspired line artwork" />
       </div>
       <div>
         <p class="section-label">Jazz musician</p>
         <h2>Listening, timing, interplay.</h2>
         <p>
-          Alongside software, I’ve continued working as a jazz musician. On recordings connected to O.A.P. Records,
-          I appear as a double bassist in projects such as <em>Solar</em>, <em>Raisin Bread</em> and
-          <em>When We Kiss</em>.
+          Alongside software, I’ve kept working as a jazz musician. In projects connected to O.A.P. Records,
+          I appear as a double bassist in recordings such as <em>Solar</em>, <em>Raisin Bread</em> and <em>When We Kiss</em>.
         </p>
         <p>
-          The descriptions around those releases consistently point to ensemble playing, pocket, warm tone,
-          and tightly woven interplay — the kind of musical role that serves the whole while still keeping
-          an individual voice.
-        </p>
-        <p>
-          That same instinct carries into software: timing matters, space matters, and systems work best when the parts
-          actually listen to each other.
+          That role is less about standing in front and more about feel, restraint, pocket and interaction.
+          It is a way of thinking that carries into software too: good systems breathe, leave room, and support the whole.
         </p>
       </div>
     </section>
 
-    <section id="timeline" class="section">
+    <section id="timeline" class="section reveal">
       <p class="section-label">Experimentation timeline</p>
       <h2>A pattern of exploring early.</h2>
       <div class="timeline">
@@ -170,7 +183,49 @@
       </div>
     </section>
 
-    <section class="section grid-2">
+    <section id="projects" class="section reveal">
+      <div class="section-head">
+        <div>
+          <p class="section-label">Projects</p>
+          <h2>Things I build around the edges.</h2>
+        </div>
+      </div>
+      <div class="project-list">
+        <article class="card panel project-card soft-hover">
+          <div class="project-topline">
+            <span class="project-type">Systems thinking</span>
+            <span class="project-status">Ongoing</span>
+          </div>
+          <h3>AI workflows and agent experiments</h3>
+          <p>
+            Designing flows around content, automation and coordination — not just prompts, but systems that can actually do work.
+          </p>
+        </article>
+        <article class="card panel project-card soft-hover">
+          <div class="project-topline">
+            <span class="project-type">Automation</span>
+            <span class="project-status">Ongoing</span>
+          </div>
+          <h3>Home Assistant control logic</h3>
+          <p>
+            Building practical automation with sensors, feedback loops and a bias toward understanding the real behavior of systems.
+          </p>
+        </article>
+        <article class="card panel project-card feature soft-hover">
+          <div class="project-topline">
+            <span class="project-type">Startup</span>
+            <span class="project-status">Live</span>
+          </div>
+          <h3>Recrugent.com</h3>
+          <p>
+            A startup focused on connecting engineers with product-driven teams — based on how teams actually operate, rather than just CV matching.
+          </p>
+          <a class="text-link" href="https://recrugent.com" target="_blank" rel="noreferrer">Visit Recrugent.com</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section grid-2 reveal">
       <div>
         <p class="section-label">How I work</p>
         <h2>Complexity is not a reason to back away.</h2>
@@ -185,8 +240,7 @@
       </div>
       <div class="quote-card card panel">
         <blockquote>
-          “From mainframe systems to AI workflows, the thread is not trend-chasing —
-          it’s understanding systems deeply enough to build something useful.”
+          “From mainframe systems to AI workflows, the thread is not trend-chasing — it’s understanding systems deeply enough to build something useful.”
         </blockquote>
       </div>
     </section>
@@ -195,11 +249,11 @@
   <footer id="contact" class="site-footer">
     <div>
       <h2>Let’s connect</h2>
-      <p>This site is designed as a lightweight static page for easy micro-hosting.</p>
+      <p>This site is lightweight, static and built for simple hosting.</p>
     </div>
     <div class="footer-links">
       <a href="https://recrugent.com" target="_blank" rel="noreferrer">Recrugent.com</a>
-      <a href="mailto:hello@in-a-million.com">hello@in-a-million.com</a>
+      <a href="mailto:andy@in-a-million.com">andy@in-a-million.com</a>
     </div>
   </footer>
 
