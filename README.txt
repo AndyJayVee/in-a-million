@@ -1,19 +1,7 @@
-in-a-million.com static site
-============================
+Copy these files INTO your existing in-a-million repo folder.
 
-Files:
-- index.html
-- styles.css
-- script.js
-- assets/*.svg
-
-How to host for free:
-1. Create a GitHub repo or Cloudflare Pages project.
-2. Upload all files from this folder.
-3. Point your domain/subdomain with the host's instructions.
-4. For a tiny site like this, static hosting is enough.
-
-Easy edits:
-- Replace the photo placeholder section in index.html with your own image.
-- Update the footer email address if needed.
-- Swap the SVG artwork with your own photos later.
+Important:
+- Keep your existing .git folder
+- Keep your existing CNAME file
+- Overwrite index.html / styles.css / script.js if needed
+- Copy the assets folder in as well
