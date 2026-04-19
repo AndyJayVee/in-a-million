@@ -100,7 +100,7 @@ main, footer, header { position: relative; z-index: 2; }
   box-shadow: 0 16px 40px rgba(95, 139, 195, 0.18);
 }
 .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
-.brand img { width: min(170px, 34vw); height: auto; }
+.brand img { width: min(142px, 29vw); height: auto; }
 .site-nav {
   display: flex;
   flex-wrap: wrap;

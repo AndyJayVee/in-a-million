@@ -1,31 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-labelledby="title desc">
-  <title id="title">In@Million logo</title>
-  <desc id="desc">In@Million wordmark with colorful at symbol between In and Million</desc>
+<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="In at Million logo">
   <defs>
-    <linearGradient id="gradA" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1b87ff"/>
-      <stop offset="35%" stop-color="#5333ff"/>
-      <stop offset="68%" stop-color="#ff1f9d"/>
-      <stop offset="100%" stop-color="#ffd44d"/>
+    <linearGradient id="outerGrad" x1="260" y1="18" x2="408" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3FD9FF"/>
+      <stop offset="0.22" stop-color="#2D83FF"/>
+      <stop offset="0.48" stop-color="#4A2BFF"/>
+      <stop offset="0.7" stop-color="#D12DFF"/>
+      <stop offset="0.87" stop-color="#FF4B8A"/>
+      <stop offset="1" stop-color="#FFD94E"/>
     </linearGradient>
-    <linearGradient id="gradB" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0%" stop-color="#1fd6ff"/>
-      <stop offset="45%" stop-color="#2456ff"/>
-      <stop offset="100%" stop-color="#ff7f32"/>
+    <linearGradient id="innerGrad" x1="285" y1="55" x2="365" y2="145" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#69E6FF"/>
+      <stop offset="0.28" stop-color="#3C9FFF"/>
+      <stop offset="0.58" stop-color="#6438FF"/>
+      <stop offset="0.82" stop-color="#C935FF"/>
+      <stop offset="1" stop-color="#FF7A59"/>
     </linearGradient>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#7eaef5" flood-opacity="0.16"/>
+    <linearGradient id="tailGrad" x1="328" y1="116" x2="389" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4E2CFF"/>
+      <stop offset="0.5" stop-color="#E136D7"/>
+      <stop offset="1" stop-color="#FF5C5C"/>
+    </linearGradient>
+    <filter id="softShadow" x="221" y="8" width="206" height="202" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#44639E" flood-opacity="0.14"/>
     </filter>
   </defs>
-
-  <g fill="#121a2f" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="152" letter-spacing="-6">
-    <text x="0" y="154">In</text>
-    <text x="398" y="154">Million</text>
+  <g fill="#20283A">
+    <path d="M28.74 165V55.32H60.78V165H28.74ZM76.8122 165V85.56H107.154V95.82C111.714 89.02 119.424 83.58 131.154 83.58C150.534 83.58 163.704 96.72 163.704 117.87V165H133.362V122.73C133.362 112.02 127.652 105.64 117.774 105.64C107.896 105.64 102.354 112.02 102.354 122.73V165H76.8122Z"/>
+    <path d="M470.95 165V55.32H513.365L545.569 112.68L577.936 55.32H620.189V165H588.145V104.5L560.866 151.06H529.944L502.995 104.5V165H470.95ZM642.469 165V85.56H672.811V165H642.469ZM641.809 70.38C641.809 61 649.683 53.62 659.651 53.62C669.619 53.62 677.493 61 677.493 70.38C677.493 79.76 669.619 86.98 659.651 86.98C649.683 86.98 641.809 79.76 641.809 70.38ZM694.827 165V85.56H725.169V165H694.827ZM747.185 165V85.56H777.527V165H747.185ZM799.543 165V85.56H829.885V165H799.543ZM842.767 125.28C842.767 101.83 860.657 83.58 885.376 83.58C910.095 83.58 927.985 101.83 927.985 125.28C927.985 148.73 910.095 166.98 885.376 166.98C860.657 166.98 842.767 148.73 842.767 125.28ZM873.109 125.28C873.109 135.42 878.981 142.24 885.376 142.24C891.772 142.24 897.643 135.42 897.643 125.28C897.643 115.14 891.772 108.32 885.376 108.32C878.981 108.32 873.109 115.14 873.109 125.28Z"/>
   </g>
-
-  <g transform="translate(215 20)" filter="url(#softShadow)">
-    <ellipse cx="72" cy="84" rx="76" ry="58" transform="rotate(-18 72 84)" fill="none" stroke="url(#gradA)" stroke-width="22"/>
-    <ellipse cx="72" cy="84" rx="58" ry="44" transform="rotate(-18 72 84)" fill="none" stroke="url(#gradB)" stroke-width="18" opacity="0.92"/>
-    <text x="18" y="128" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="138">@</text>
+  <g filter="url(#softShadow)">
+    <ellipse cx="319" cy="104" rx="82" ry="74" transform="rotate(-18 319 104)" fill="url(#outerGrad)"/>
+    <ellipse cx="320" cy="103" rx="56" ry="50" transform="rotate(-18 320 103)" fill="url(#innerGrad)"/>
+    <ellipse cx="320" cy="103" rx="28" ry="22" transform="rotate(-18 320 103)" fill="#FFFFFF" fill-opacity="0.24"/>
+    <path d="M382 144C373 155 359 163 342 164C331 165 320 163 311 159C299 154 293 146 293 136C293 126 300 118 310 118C317 118 323 121 327 126C331 115 339 105 351 98C363 91 376 90 388 94C395 96 401 99 405 104C401 90 393 77 381 67C363 52 336 47 308 52C280 57 257 72 245 93C232 115 232 139 246 157C257 173 277 183 301 187C329 192 357 186 377 172C385 167 392 160 397 153L382 144Z" fill="url(#tailGrad)"/>
+    <path d="M345 61C369 61 386 77 386 101C386 116 379 127 367 134C361 138 353 141 345 141C321 141 304 125 304 101C304 77 321 61 345 61ZM345 78C331 78 322 87 322 101C322 115 331 124 345 124C359 124 368 115 368 101C368 87 359 78 345 78Z" fill="#EEF5FF" fill-opacity="0.9"/>
+    <path d="M368 95C367 83 358 76 345 76C330 76 320 86 320 101C320 116 330 126 345 126C357 126 365 120 368 109H349V95H368Z" fill="#3154D8" fill-opacity="0.55"/>
   </g>
 </svg>
