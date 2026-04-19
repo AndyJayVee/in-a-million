@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andy Valkenburg | in-a-million.com</title>
-  <meta name="description" content="Software engineer, jazz musician, experimenter." />
+  <title>Andy Valkenburg | In@Million</title>
+  <meta name="description" content="Software engineer, jazz musician and experimenter. From mainframe systems to AI workflows." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
+  <div class="page-glow glow-a"></div>
+  <div class="page-glow glow-b"></div>
+  <div class="grid-overlay"></div>
 
-  <header class="site-header">
-    <a class="brand" href="#top">in-a-million</a>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="In@Million home">
+      <img src="assets/inatmillion-logo-black.png" alt="In@Million logo" />
+    </a>
     <nav>
       <a href="#about">About</a>
       <a href="#engineering">Engineering</a>
@@ -30,7 +32,7 @@
   <main id="top">
     <section class="hero section">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Andy Valkenburg</p>
+        <p class="eyebrow">Andy Valkenburg · In@Million</p>
         <h1>Understanding systems, <span>from Mainframe to AI.</span></h1>
         <p class="lead">
           Software engineer, jazz musician, and long-time experimenter with technology —
@@ -42,16 +44,23 @@
         </div>
         <div class="cta-row">
           <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn secondary" href="#about">Read more</a>
+          <a class="btn secondary" href="#contact">Get in touch</a>
         </div>
       </div>
+
       <div class="hero-visual reveal delay-1">
-        <div class="hero-photo card glass">
-          <img src="assets/dev-room.png" alt="Developer workspace with three screens" />
-        </div>
-        <div class="floating-note card panel">
-          <p class="note-label">Current mode</p>
-          <strong>Complex systems, real constraints, practical experimentation.</strong>
+        <div class="hero-frame card">
+          <div class="hero-photo-wrap">
+            <img src="assets/dev-room-optimized.jpg" alt="Developer workspace with three screens" />
+          </div>
+          <div class="hero-card top-card">
+            <span class="mini-label">Current mode</span>
+            <strong>Complex systems, real constraints, practical experimentation.</strong>
+          </div>
+          <div class="hero-card bottom-card">
+            <span class="mini-label">In@Million</span>
+            <p>A personal brand around technology, creativity and building useful things.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -62,8 +71,8 @@
         <h2>Curiosity first. Trend second.</h2>
         <p>
           I’m a software engineer with one foot in modern stacks and one in long-lived critical systems.
-          By day I work as a COBOL developer at the Belastingdienst, building and maintaining
-          large-scale mainframe systems with z/OS, ISPF, IDz, Zowe and Robot Framework.
+          By day I work as a COBOL developer at the Belastingdienst, building and maintaining large-scale mainframe systems
+          with z/OS, ISPF, IDz, Zowe and Robot Framework.
         </p>
         <p>
           In that environment, I’m developing as a technical depth engineer: someone who likes getting below the surface,
@@ -74,13 +83,14 @@
           AI workflows, automation and the space where technical systems start behaving like organizations.
         </p>
       </div>
+
       <aside class="identity-stack">
-        <div class="card panel stat-card">
+        <div class="card soft-panel stat-card">
           <span class="stat-kicker">Work</span>
           <h3>Mainframe engineering</h3>
           <p>Learning depth through systems that have to keep working.</p>
         </div>
-        <div class="card panel stat-card accent">
+        <div class="card soft-panel stat-card accent">
           <span class="stat-kicker">Music</span>
           <h3>Jazz bassist</h3>
           <p>Listening, timing and serving the whole without losing your own voice.</p>
@@ -98,22 +108,23 @@
           My technical path combines Java, PHP, Symfony, Laravel, Docker and agile workflows with the realities of enterprise mainframe development.
         </p>
       </div>
+
       <div class="card-grid three">
-        <article class="card panel soft-hover">
+        <article class="card soft-panel lift">
           <h3>Current focus</h3>
           <p>
             COBOL development on enterprise-scale mainframe systems, with attention to structure,
             reliability, maintainability and the realities of long software lifecycles.
           </p>
         </article>
-        <article class="card panel soft-hover">
+        <article class="card soft-panel lift">
           <h3>Broader stack</h3>
           <p>
             Experience with Java, PHP, Symfony, Laravel, Docker and agile workflows.
             Comfortable moving between older and newer environments.
           </p>
         </article>
-        <article class="card panel soft-hover">
+        <article class="card soft-panel lift">
           <h3>Engineering lens</h3>
           <p>
             Influenced by practical software engineering ideas from <em>Clean Code</em>,
@@ -124,7 +135,7 @@
     </section>
 
     <section id="music" class="section grid-2 reverse reveal">
-      <div class="card glass artwork-panel jazz-panel">
+      <div class="card jazz-art-card">
         <img src="assets/jazz-lines.svg" alt="Abstract jazz-inspired line artwork" />
       </div>
       <div>
@@ -191,7 +202,7 @@
         </div>
       </div>
       <div class="project-list">
-        <article class="card panel project-card soft-hover">
+        <article class="card soft-panel project-card lift">
           <div class="project-topline">
             <span class="project-type">Systems thinking</span>
             <span class="project-status">Ongoing</span>
@@ -201,7 +212,7 @@
             Designing flows around content, automation and coordination — not just prompts, but systems that can actually do work.
           </p>
         </article>
-        <article class="card panel project-card soft-hover">
+        <article class="card soft-panel project-card lift">
           <div class="project-topline">
             <span class="project-type">Automation</span>
             <span class="project-status">Ongoing</span>
@@ -211,7 +222,7 @@
             Building practical automation with sensors, feedback loops and a bias toward understanding the real behavior of systems.
           </p>
         </article>
-        <article class="card panel project-card feature soft-hover">
+        <article class="card soft-panel project-card feature lift">
           <div class="project-topline">
             <span class="project-type">Startup</span>
             <span class="project-status">Live</span>
@@ -238,7 +249,7 @@
           the common thread is the same: break it down, make it real, improve it.
         </p>
       </div>
-      <div class="quote-card card panel">
+      <div class="quote-card card soft-panel accent-glow">
         <blockquote>
           “From mainframe systems to AI workflows, the thread is not trend-chasing — it’s understanding systems deeply enough to build something useful.”
         </blockquote>
@@ -248,12 +259,12 @@
 
   <footer id="contact" class="site-footer">
     <div>
-      <h2>Let’s connect</h2>
+      <img class="footer-logo" src="assets/inatmillion-logo-black.png" alt="In@Million logo" />
       <p>This site is lightweight, static and built for simple hosting.</p>
     </div>
     <div class="footer-links">
       <a href="https://recrugent.com" target="_blank" rel="noreferrer">Recrugent.com</a>
-      <a href="mailto:andy@in-a-million.com">andy@in-a-million.com</a>
+      <a id="email-link" href="#">andy [at] in-a-million.com</a>
     </div>
   </footer>
 
